@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -fno-elide-constructors -Wall  CMakeFiles/fileTest.dir/src/file.cpp.o CMakeFiles/fileTest.dir/src/func.cpp.o -o fileTest   -L/home/rzk/documents/learning/findingJob/systemCode/src

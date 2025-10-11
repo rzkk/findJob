@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -fno-elide-constructors -Wall  -g CMakeFiles/leetcode.dir/src/leetcode.cpp.o -o leetcode
