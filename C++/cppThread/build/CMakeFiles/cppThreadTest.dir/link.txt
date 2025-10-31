@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -fno-elide-constructors -Wall  CMakeFiles/cppThreadTest.dir/src/main.cpp.o -o cppThreadTest  -lpthread

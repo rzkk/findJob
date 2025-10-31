@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -fno-elide-constructors -Wall  CMakeFiles/zhenzhen.dir/src/chat/azhen.cpp.o -o zhenzhen   -L/home/rzk/documents/learning/findingJob/systemCode/src
