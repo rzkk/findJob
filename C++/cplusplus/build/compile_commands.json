@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/rzk/documents/learning/cplusplus/build",
-  "command": "/usr/bin/g++  -I/home/rzk/documents/learning/cplusplus/include -I/home/rzk/documents/learning/cplusplus/src  -g  -fno-elide-constructors -Wall  -g -o CMakeFiles/leetcode.dir/src/leetcode.cpp.o -c /home/rzk/documents/learning/cplusplus/src/leetcode.cpp",
-  "file": "/home/rzk/documents/learning/cplusplus/src/leetcode.cpp",
-  "output": "CMakeFiles/leetcode.dir/src/leetcode.cpp.o"
-}
-]
