@@ -69,7 +69,7 @@ void test5(int argc , char * argv[]){   //全双工
 
     while(1){
         read(fd , buf , 4096);
-        printf("read one\n");
+        printf("read one\n")  ;
         sleep(2);
     }
 
