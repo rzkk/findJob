@@ -1,3 +1,0 @@
-/home/rzk/documents/learning/cppThread/build/CMakeFiles/cppThreadTest.dir
-/home/rzk/documents/learning/cppThread/build/CMakeFiles/edit_cache.dir
-/home/rzk/documents/learning/cppThread/build/CMakeFiles/rebuild_cache.dir

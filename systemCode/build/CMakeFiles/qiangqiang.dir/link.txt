@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -fno-elide-constructors -Wall  CMakeFiles/qiangqiang.dir/src/chat/aqiang.cpp.o -o qiangqiang   -L/home/rzk/documents/learning/findingJob/systemCode/src
