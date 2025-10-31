@@ -4,6 +4,7 @@
 #include<string>
  #include<cstring>
 #include<vector>
+
 // #include <cassert>
 // #include<iostream>
 // #include<stdlib.h>
@@ -19,7 +20,11 @@
 
 #include <dirent.h> // opendir closedir readdir 
 
+ #include <pwd.h>
+ #include <grp.h>
 
+ #include <fcntl.h>
+  #include <sys/mman.h>
 using std::size_t;
 using std::cout;
 using std::endl;

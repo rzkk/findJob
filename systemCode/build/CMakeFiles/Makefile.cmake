@@ -128,4 +128,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/fileTest.dir/DependInfo.cmake"
+  "CMakeFiles/pipRead.dir/DependInfo.cmake"
+  "CMakeFiles/pipwrite.dir/DependInfo.cmake"
+  "CMakeFiles/zhenzhen.dir/DependInfo.cmake"
+  "CMakeFiles/qiangqiang.dir/DependInfo.cmake"
   )

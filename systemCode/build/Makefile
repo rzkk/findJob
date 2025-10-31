@@ -129,6 +129,106 @@ fileTest/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileTest.dir/build.make CMakeFiles/fileTest.dir/build
 .PHONY : fileTest/fast
 
+#=============================================================================
+# Target rules for targets named pipRead
+
+# Build rule for target.
+pipRead: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pipRead
+.PHONY : pipRead
+
+# fast build rule for target.
+pipRead/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipRead.dir/build.make CMakeFiles/pipRead.dir/build
+.PHONY : pipRead/fast
+
+#=============================================================================
+# Target rules for targets named pipwrite
+
+# Build rule for target.
+pipwrite: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pipwrite
+.PHONY : pipwrite
+
+# fast build rule for target.
+pipwrite/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipwrite.dir/build.make CMakeFiles/pipwrite.dir/build
+.PHONY : pipwrite/fast
+
+#=============================================================================
+# Target rules for targets named zhenzhen
+
+# Build rule for target.
+zhenzhen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zhenzhen
+.PHONY : zhenzhen
+
+# fast build rule for target.
+zhenzhen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zhenzhen.dir/build.make CMakeFiles/zhenzhen.dir/build
+.PHONY : zhenzhen/fast
+
+#=============================================================================
+# Target rules for targets named qiangqiang
+
+# Build rule for target.
+qiangqiang: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qiangqiang
+.PHONY : qiangqiang
+
+# fast build rule for target.
+qiangqiang/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qiangqiang.dir/build.make CMakeFiles/qiangqiang.dir/build
+.PHONY : qiangqiang/fast
+
+src/chat/aqiang.o: src/chat/aqiang.cpp.o
+.PHONY : src/chat/aqiang.o
+
+# target to build an object file
+src/chat/aqiang.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qiangqiang.dir/build.make CMakeFiles/qiangqiang.dir/src/chat/aqiang.cpp.o
+.PHONY : src/chat/aqiang.cpp.o
+
+src/chat/aqiang.i: src/chat/aqiang.cpp.i
+.PHONY : src/chat/aqiang.i
+
+# target to preprocess a source file
+src/chat/aqiang.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qiangqiang.dir/build.make CMakeFiles/qiangqiang.dir/src/chat/aqiang.cpp.i
+.PHONY : src/chat/aqiang.cpp.i
+
+src/chat/aqiang.s: src/chat/aqiang.cpp.s
+.PHONY : src/chat/aqiang.s
+
+# target to generate assembly for a file
+src/chat/aqiang.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/qiangqiang.dir/build.make CMakeFiles/qiangqiang.dir/src/chat/aqiang.cpp.s
+.PHONY : src/chat/aqiang.cpp.s
+
+src/chat/azhen.o: src/chat/azhen.cpp.o
+.PHONY : src/chat/azhen.o
+
+# target to build an object file
+src/chat/azhen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zhenzhen.dir/build.make CMakeFiles/zhenzhen.dir/src/chat/azhen.cpp.o
+.PHONY : src/chat/azhen.cpp.o
+
+src/chat/azhen.i: src/chat/azhen.cpp.i
+.PHONY : src/chat/azhen.i
+
+# target to preprocess a source file
+src/chat/azhen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zhenzhen.dir/build.make CMakeFiles/zhenzhen.dir/src/chat/azhen.cpp.i
+.PHONY : src/chat/azhen.cpp.i
+
+src/chat/azhen.s: src/chat/azhen.cpp.s
+.PHONY : src/chat/azhen.s
+
+# target to generate assembly for a file
+src/chat/azhen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/zhenzhen.dir/build.make CMakeFiles/zhenzhen.dir/src/chat/azhen.cpp.s
+.PHONY : src/chat/azhen.cpp.s
+
 src/file.o: src/file.cpp.o
 .PHONY : src/file.o
 
@@ -153,29 +253,53 @@ src/file.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileTest.dir/build.make CMakeFiles/fileTest.dir/src/file.cpp.s
 .PHONY : src/file.cpp.s
 
-src/func.o: src/func.cpp.o
-.PHONY : src/func.o
+src/pipeRead.o: src/pipeRead.cpp.o
+.PHONY : src/pipeRead.o
 
 # target to build an object file
-src/func.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileTest.dir/build.make CMakeFiles/fileTest.dir/src/func.cpp.o
-.PHONY : src/func.cpp.o
+src/pipeRead.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipRead.dir/build.make CMakeFiles/pipRead.dir/src/pipeRead.cpp.o
+.PHONY : src/pipeRead.cpp.o
 
-src/func.i: src/func.cpp.i
-.PHONY : src/func.i
+src/pipeRead.i: src/pipeRead.cpp.i
+.PHONY : src/pipeRead.i
 
 # target to preprocess a source file
-src/func.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileTest.dir/build.make CMakeFiles/fileTest.dir/src/func.cpp.i
-.PHONY : src/func.cpp.i
+src/pipeRead.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipRead.dir/build.make CMakeFiles/pipRead.dir/src/pipeRead.cpp.i
+.PHONY : src/pipeRead.cpp.i
 
-src/func.s: src/func.cpp.s
-.PHONY : src/func.s
+src/pipeRead.s: src/pipeRead.cpp.s
+.PHONY : src/pipeRead.s
 
 # target to generate assembly for a file
-src/func.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fileTest.dir/build.make CMakeFiles/fileTest.dir/src/func.cpp.s
-.PHONY : src/func.cpp.s
+src/pipeRead.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipRead.dir/build.make CMakeFiles/pipRead.dir/src/pipeRead.cpp.s
+.PHONY : src/pipeRead.cpp.s
+
+src/pipeWrite.o: src/pipeWrite.cpp.o
+.PHONY : src/pipeWrite.o
+
+# target to build an object file
+src/pipeWrite.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipwrite.dir/build.make CMakeFiles/pipwrite.dir/src/pipeWrite.cpp.o
+.PHONY : src/pipeWrite.cpp.o
+
+src/pipeWrite.i: src/pipeWrite.cpp.i
+.PHONY : src/pipeWrite.i
+
+# target to preprocess a source file
+src/pipeWrite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipwrite.dir/build.make CMakeFiles/pipwrite.dir/src/pipeWrite.cpp.i
+.PHONY : src/pipeWrite.cpp.i
+
+src/pipeWrite.s: src/pipeWrite.cpp.s
+.PHONY : src/pipeWrite.s
+
+# target to generate assembly for a file
+src/pipeWrite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pipwrite.dir/build.make CMakeFiles/pipwrite.dir/src/pipeWrite.cpp.s
+.PHONY : src/pipeWrite.cpp.s
 
 # Help Target
 help:
@@ -186,12 +310,25 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... fileTest"
+	@echo "... pipRead"
+	@echo "... pipwrite"
+	@echo "... qiangqiang"
+	@echo "... zhenzhen"
+	@echo "... src/chat/aqiang.o"
+	@echo "... src/chat/aqiang.i"
+	@echo "... src/chat/aqiang.s"
+	@echo "... src/chat/azhen.o"
+	@echo "... src/chat/azhen.i"
+	@echo "... src/chat/azhen.s"
 	@echo "... src/file.o"
 	@echo "... src/file.i"
 	@echo "... src/file.s"
-	@echo "... src/func.o"
-	@echo "... src/func.i"
-	@echo "... src/func.s"
+	@echo "... src/pipeRead.o"
+	@echo "... src/pipeRead.i"
+	@echo "... src/pipeRead.s"
+	@echo "... src/pipeWrite.o"
+	@echo "... src/pipeWrite.i"
+	@echo "... src/pipeWrite.s"
 .PHONY : help
 
 

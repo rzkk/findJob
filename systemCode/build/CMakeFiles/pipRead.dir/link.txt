@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -fno-elide-constructors -Wall  CMakeFiles/pipRead.dir/src/pipeRead.cpp.o -o pipRead   -L/home/rzk/documents/learning/findingJob/systemCode/src
