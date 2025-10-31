@@ -1,0 +1,7 @@
+/home/rzk/documents/learning/findingJob/systemCode/build/CMakeFiles/fileTest.dir
+/home/rzk/documents/learning/findingJob/systemCode/build/CMakeFiles/pipRead.dir
+/home/rzk/documents/learning/findingJob/systemCode/build/CMakeFiles/pipwrite.dir
+/home/rzk/documents/learning/findingJob/systemCode/build/CMakeFiles/zhenzhen.dir
+/home/rzk/documents/learning/findingJob/systemCode/build/CMakeFiles/qiangqiang.dir
+/home/rzk/documents/learning/findingJob/systemCode/build/CMakeFiles/edit_cache.dir
+/home/rzk/documents/learning/findingJob/systemCode/build/CMakeFiles/rebuild_cache.dir

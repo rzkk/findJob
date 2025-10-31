@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -fno-elide-constructors -Wall  CMakeFiles/pipwrite.dir/src/pipeWrite.cpp.o -o pipwrite   -L/home/rzk/documents/learning/findingJob/systemCode/src
