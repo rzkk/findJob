@@ -63,13 +63,13 @@ void test4(int argc , char * argv[]){   //全双工
     close(fdw);
 } 
 
-void test5(int argc , char * argv[]){   //全双工
-    ARGS_CHECK(argc , 3);
+void test5(int argc , char * argv[]){   //持续写 ， 测试写阻塞
+    ARGS_CHECK(argc , 2);
 
     int fd = open(argv[1] , O_WRONLY);
     ERROR_CHECK(fd , -1, " open");
 
-    char buf[4096] = {0};
+    char buf[1024] = {0};
     int cnt = 0;
 
     while(1){
@@ -83,10 +83,47 @@ void test5(int argc , char * argv[]){   //全双工
     close(fd);
 } 
 
+typedef struct 
+{
+    unsigned int len = 0;
+    char buf[4092] = {0}; 
+}Data;
 
+void test7(int argc , char * argv[]){
+    ARGS_CHECK(argc , 3);
+
+    int fdw = open(argv[1] , O_WRONLY);
+    ERROR_CHECK(fdw , -1 , "open");
+
+    int fdFile = open(argv[2] , O_RDONLY);
+    ERROR_CHECK(fdFile , -1 , "open");
+
+    //先发文件名 
+    Data data;  // 分两次发
+    data.len = strlen(argv[2]);
+    memcpy(data.buf , argv[2] ,  data.len);
+    cout<<data.buf<<endl;
+    int ret = write(fdw , &data.len,  sizeof(data.len));ERROR_CHECK(ret , -1 ,"write");
+    ret = write(fdw , data.buf,  data.len );  ERROR_CHECK(ret , -1 ,"write");
+  
+
+    //bzero(data.buf , sizeof(data.buf));
+    while((ret = read(fdFile , data.buf, sizeof(data.buf))) != 0){
+        ERROR_CHECK(ret , -1 , "read");
+        data.len = ret ;
+
+        write(fdw , &data.len,  sizeof(data.len));ERROR_CHECK(ret , -1 ,"write");
+        write(fdw, data.buf , data.len);ERROR_CHECK(ret , -1 ,"write");
+
+    //    bzero(data.buf , sizeof(data.buf));
+    }
+
+    close(fdw);
+
+}
 
 int main(int argc , char * argv[]){
-    test5(argc , argv);
+    test7(argc , argv);
 }
 
 
