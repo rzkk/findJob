@@ -20,11 +20,23 @@
 
 #include <dirent.h> // opendir closedir readdir 
 
- #include <pwd.h>
- #include <grp.h>
+#include <pwd.h>
+#include <grp.h>
 
- #include <fcntl.h>
-  #include <sys/mman.h>
+#include <fcntl.h>
+#include <sys/mman.h>
+
+#include<sys/wait.h>
+
+#include <syslog.h>
+
+#include<sys/ipc.h>  // shmget 
+#include<sys/shm.h>
+
+
+#include<signal.h>
+
+#include<sys/time.h>
 using std::size_t;
 using std::cout;
 using std::endl;
@@ -63,17 +75,21 @@ inline void errorcheck_eq_die(const T1& value, const T2& bad,
     } while (0)
 
 
+inline void errorcheak_pthread(int ret ,  const char* message,const char* file,int line, const char* func){
+     if(ret != 0){  
+        fprintf(stderr , "[%s:%s:%d]%s:%s \n" ,file,func, line ,message , strerror(ret) ); 
+        //perror(message); 
+        //strerror(ret);
+        std::fflush(stderr); 
+        std::abort();
+    }
+}
 
-// template<class T1 , class  T2 >
-// // inline
 
-// void errorcheck(const T1 &t1 , const T2& t2, const char* message ){ //, const char message[]
-//     if(t1 ==t2){
-//         perror(message);//message.c_str()
-//         assert(0);
-//     }
-  
-// }
+#define THREAD_ERROR_CHECK(ret, msg )\
+    do {  \
+        errorcheak_pthread((ret) ,(msg)  ,  __FILE__, __LINE__, __func__) ; \
+    } while (0)
 
 
 void add();
